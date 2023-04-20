@@ -18,7 +18,7 @@ jobs:
   test-job:
     runs-on: ubuntu-latest
     steps:
-      - uses: ./
+      - uses: leonardodppaim/devops2@v1.1
      
       - run: echo "test!"
 
