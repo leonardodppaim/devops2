@@ -1,19 +1,22 @@
 on: [push]
+name: CI
 
 jobs:
-  hello_world_job:
+  build_job:
     runs-on: ubuntu-latest
-    name: A job to say hello
     steps:
-      # To use this repository's private action,
-      # you must check out the repository
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Hello world action step
-        uses: ./ # Uses an action in the root directory
-        id: hello
-        with:
-          numero: 'Mona the Octocat'
-      # Use the output from the `hello` step
-      - name: Get the output time
-        run: echo "The time was ${{ steps.hello.outputs.time }}"
+      - uses: actions/checkout@v3
+      
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+       - uses: ./ # Uses an action in the root directory
+       - name: Test job
+         with:
+          numero: 'Teste CI'
+          
+  deploy_job:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "Finalizado!"
