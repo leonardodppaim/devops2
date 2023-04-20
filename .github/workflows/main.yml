@@ -1,5 +1,3 @@
-
-
 on: [push]
 
 
@@ -10,14 +8,14 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: CI
+      - run: echo "build!"
       
   test_job:
     runs-on: ubuntu-latest
     steps:
-       - uses: ./ # Uses an action in the root directory
-       - name: Test job
-         with:
-          numero: 'Teste CI'
+       - uses: actions/checkout@v3
+       - run: echo "test!"
+       - name: test
           
   deploy_job:
     runs-on: ubuntu-latest
