@@ -1,5 +1,7 @@
-on: [push]
 name: CI
+
+on: [push]
+
 
 jobs:
   build_job:
