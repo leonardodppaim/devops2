@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: leonardodppaim/devops2@main
+        uses: leonardodppaim/devops2
         with:
           numero: 'Mona the Octocat'
       # Use the output from the `hello` step
