@@ -20,6 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: ./
+      - uses: AppThreat/sast-scan-action@master
+        with:
+          type: "nodejs"
      
       - run: echo "test!"
 
