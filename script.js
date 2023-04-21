@@ -15,9 +15,10 @@ try {
     }
     console.log("Concluido");
 }
-}
+
 cath (error){
     core.setFailed(error.message);
+}
 }
 
 
