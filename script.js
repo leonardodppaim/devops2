@@ -7,13 +7,13 @@ try {
     
     if(numero)
     {
-        console.log("Concluido");
-        document.getElementById('resultado').innerHTML = numero;
+        console.log(numero);
+       
     }
     else
     {
         console.log("Falhou");
-        document.getElementById('resultado').innerHTML = "Pegadinha do malandro";
+        
     }
     
 }
