@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-const adicionar = async() => {
+
     try{
         
    
@@ -18,7 +18,6 @@ const adicionar = async() => {
     catch (error){
         console.log("Erro");
     }
-}
 
 
 
