@@ -7,13 +7,15 @@ try {
     
     if(numero)
     {
+        console.log("Concluido");
         document.getElementById('resultado').innerHTML = numero;
     }
     else
     {
+        console.log("Falhou");
         document.getElementById('resultado').innerHTML = "Pegadinha do malandro";
     }
-    console.log("Concluido");
+    
 }
 
 catch  (error){
