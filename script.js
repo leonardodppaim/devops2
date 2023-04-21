@@ -10,4 +10,7 @@ try {
     }
     console.log("Concluido");
 }
+catch (error){
+    cosole.log("erro");
+}
 
