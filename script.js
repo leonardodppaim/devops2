@@ -16,7 +16,7 @@ try {
     console.log("Concluido");
 }
 
-cath (error){
+catch  (error){
     core.setFailed(error.message);
 }
 }
