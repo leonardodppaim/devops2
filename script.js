@@ -1,4 +1,4 @@
-function adicionar (){
+try {
     var numero = document.getElementById('entrada1').innerHTML;
     if(numero)
     {
