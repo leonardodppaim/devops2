@@ -1,25 +1,25 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-
-try {  
-    const numero = core.getInput('numero', { required: true });
-    
-    if(numero)
+const adicionar = async() => {
+    try{
+        
+   
+    var texto = core.getInput('numero');
+    if(texto)
     {
-        console.log(numero);
-       
+        console.log("Voce digitou " + texto);
     }
     else
     {
-        console.log("Falhou");
-        
+        console.log("Nada ...");
     }
-    
+    }
+    catch (error){
+        console.log("Erro");
+    }
 }
 
-catch  (error){
-    core.setFailed(error.message);
-}
+
 
 
