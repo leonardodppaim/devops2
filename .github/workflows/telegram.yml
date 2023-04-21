@@ -25,4 +25,4 @@ jobs:
           token: ${{ secrets.TOKEN_TELEGRAM }}
           format: markdown
           message: |
-            A new PR is raised [View all PR's](https://github.com/<user>/<repo>/pulls)
+            Finalmente a ação esta funcionando!
