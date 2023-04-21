@@ -8,8 +8,6 @@ function adicionar (){
     {
         document.getElementById('resultado').innerHTML = "Nada..."
     }
+    console.log("Concluido");
 }
 
-function teste (){
-    document.getElementById('resultado').innerHTML = "teste";
-}
