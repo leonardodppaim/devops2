@@ -3,7 +3,7 @@ const github = require('@actions/github');
 
 
 try {  
-    const numero = core.getInput('numero1', { required: true });
+    const numero = core.getInput('numero', { required: true });
     
     if(numero)
     {
