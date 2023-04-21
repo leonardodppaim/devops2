@@ -1,7 +1,7 @@
 const core = require('@actions/core');
 const github = require('@actions/github');
 
-const adicionadar = async () =>{
+
 try {  
     const numero = core.getInput('numero1', { required: true });
     
@@ -18,7 +18,6 @@ try {
 
 catch  (error){
     core.setFailed(error.message);
-}
 }
 
 
