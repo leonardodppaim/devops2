@@ -1,4 +1,4 @@
-try {
+function adicionar() {
     var numero = document.getElementById('entrada1').innerHTML;
     if(numero)
     {
@@ -10,7 +10,5 @@ try {
     }
     console.log("Concluido");
 }
-catch (error){
-    console.log("erro");
-}
+
 
